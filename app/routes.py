@@ -19,5 +19,9 @@ def index():
             'author': {'username': 'Иполит'},
             'body': 'Какая гадость эта ваша заливная рыба!!'
         }
+        {
+            'author': {'username': 'Царь'},
+            'body': 'Какое житие твое пёс смердячий!!'
+        }
     ]
     return render_template('index.html', title='Home', user=user, posts=posts)
