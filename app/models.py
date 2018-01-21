@@ -29,6 +29,6 @@ class Post(db.Model):
     def __repr__(self):
         return '<Post {}>'.format(self.body)
 
-@login.user_loader
+@login.user_loader #Пользовательский загрузчик
 def load_user(id):
     return User.query.get(int(id))
